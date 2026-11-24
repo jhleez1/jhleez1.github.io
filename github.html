@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GitHub · Jihan Lee</title>
+<meta name="description" content="Jihan Lee's repositories and contributions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="github">
+<!-- BODY:START -->
+<main id="main">
+  <header class="page-head wrap">
+    <p class="eyebrow">Open source</p>
+    <h1>Code on GitHub</h1>
+    <p class="lead">Real numbers only: repositories, languages and contributions, loaded live from GitHub.</p>
+  </header>
+  <section class="section first">
+    <div class="wrap">
+      <div class="gh-top"><p class="gh-source muted" id="ghSource"></p><a class="gh-user" id="ghUser" target="_blank" rel="noopener"></a></div>
+      <div class="gh-layout">
+        <div class="gh-card">
+          <div class="stat-grid" id="ghStats"></div>
+          <div class="lang-block">
+            <p class="eyebrow">Languages across repos</p>
+            <div class="lang-bar" id="langBar"></div>
+            <ul class="lang-legend" id="langLegend"></ul>
+          </div>
+        </div>
+        <div class="gh-card repos-card">
+          <p class="eyebrow">Repositories</p>
+          <div class="repo-list" id="repoList"></div>
+        </div>
+      </div>
+      <div class="gh-card cal-card">
+        <div class="gh-chart-head">
+          <p class="eyebrow" id="ghRange"></p>
+          <div class="seg" id="calYears" role="tablist" aria-label="Contribution year"></div>
+        </div>
+        <div class="chart-box"><div id="ghHeat" class="heat"></div></div>
+        <div class="heat-legend" id="heatLegend"></div>
+      </div>
+      <div class="feed-card">
+        <div class="feed-head"><p class="eyebrow">Recent activity</p><span class="muted" id="feedMeta"></span></div>
+        <ol class="feed" id="ghFeed"></ol>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="github-snapshot.js"></script>
+<script src="app.js"></script>
+<!-- BODY:END -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects · Jihan Lee</title>
+<meta name="description" content="Projects by Jihan Lee, with playable demos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+<!-- BODY:START -->
+<main id="main">
+  <header class="page-head wrap">
+    <p class="eyebrow">Selected work</p>
+    <h1>Projects</h1>
+    <p class="lead">PLC programs, simulators and tools. Five of them have a playable demo: open a card to try it.</p>
+  </header>
+  <section class="section first">
+    <div class="wrap">
+      <div class="proj-toolbar">
+        <div class="chips" id="projFilters" role="tablist" aria-label="Filter projects"></div>
+        <label class="search"><span class="ico" data-icon="search"></span><input id="projSearch" type="search" placeholder="Search projects" aria-label="Search projects"></label>
+      </div>
+      <div class="proj-grid" id="projGrid"></div>
+      <p class="empty" id="projEmpty" hidden>No project matches that search.</p>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="github-snapshot.js"></script>
+<script src="demos.js"></script>
+<script src="app.js"></script>
+<!-- BODY:END -->
+</body>
+</html>
